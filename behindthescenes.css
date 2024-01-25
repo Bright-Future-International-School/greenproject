@@ -49,174 +49,250 @@ main {
 
 }
 
-/* these are all of the images area and the captions */
+/* these two are responsible for the images and the main area width */
 
 main section {
 
     width: 1000px;
+
+
 }
 
-main section .energy img {
+div {
+
+    display: flex;
+    flex: 50%;
+    
+}
+
+/* these are all of the images area and the captions */
+
+.energy a {
+
+    position: relative;
+    top: 310px;
+    right: 410px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
+    color: darkgreen;
+}
+
+.energy a:hover {
+
+    color: limegreen;
+    text-decoration-color: limegreen;
+}
+
+.energy {
 
     width: 450px;
     height: 300px;
     float: left;
     position: relative;
-    left: 30px;
-    right: 500px;
-    z-index: 0;
-
 }
 
-main section .energy figcaption {
-
-    text-align: left;
-    float: left;
-    position: absolute;
-    top: 480px;
-    left: 60px;
-    width: 1000px;
-    z-index: 1;
-}
-
-main section .energy p {
-
-    color: darkgreen;
-    text-decoration: none;
-}
-
-main section .energy p:hover {
-
-    color: limegreen;
-}
-
-/* above this is the first picture */
-
-main section .susqatar img {
+.energy img {
 
     width: 450px;
     height: 300px;
-    float: right;
-    position: absolute;
-    right: 0;
-    left: 500px;
-    z-index: 0;
+    position: relative;
+    left: 20px;
 }
 
-main section .susqatar figcaption {
+/* above is the first image */
 
-    text-align: right;
-    float: right;
-    position: absolute;
-    top: 480px;
-    right: 180px;
-    z-index: 1;
-}
+.susqatar a {
 
-main section .susqatar a {
-
+    position: relative;
+    top: 310px;
+    right: 320px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
     color: darkgreen;
 }
 
-main section .susqatar p:hover {
+.susqatar a:hover {
 
     color: limegreen;
-    text-decoration: none;
+    text-decoration-color: limegreen;
 }
 
-/* above this is the second picture */
-
-main section .water img {
+.susqatar {
 
     width: 450px;
     height: 300px;
+    position: relative;
+}
+
+.susqatar img {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+
+/* above is the second image */
+
+.water a {
+
+    position: relative;
+    top: 310px;
+    right: 320px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
+    color: darkgreen;
+}
+
+.water a:hover {
+
+    color: limegreen;
+    text-decoration-color: limegreen;
+}
+
+.water {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
     float: left;
-    position: absolute;
-    left: 0;
-    right: 500px;
-    top: 550px;
+    top: 50px;
 
 }
 
-main section .water figcaption {
-
-    text-align: left;
-    position: absolute;
-    top: 860px;
-    left: 130px;
-}
-
-/* above this is the third picture */
-
-main section .food img {
+.water img {
 
     width: 450px;
     height: 300px;
-    float: right;
-    position: absolute;
-    right: 0;
-    left: 500px;
-    top: 550px;
+    position: relative;
+    left: 20px;
 }
 
-main section .food figcaption {
 
-    text-align: right;
-    position: absolute;
-    top: 860px;
-    right: 55px;
+/* above is the third image */
+
+.food a {
+
+    position: relative;
+    top: 310px;
+    right: 410px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
+    color: darkgreen;
 }
 
-/* above this is the fourth picture */
+.food a:hover {
 
-main section .tech img {
+    color: limegreen;
+    text-decoration-color: limegreen;
+}
+
+.food {
 
     width: 450px;
     height: 300px;
+    position: relative;
+    top: 50px;
+}
+
+.food img {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+
+
+/* above is the fourth image */
+
+.tech a {
+
+    position: relative;
+    top: 310px;
+    right: 420px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
+    color: darkgreen;
+}
+
+.tech a:hover {
+
+    color: limegreen;
+    text-decoration-color: limegreen;
+}
+
+.tech {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
     float: left;
-    position: absolute;
-    left: 0;
-    right: 500px;
-    top: 920px;
+    top: 100px;
 }
 
-main section .tech figcaption {
-
-    text-align: left;
-    position: absolute;
-    top: 1235px;
-    left: 55px;
-
-}
-
-/* above this is the fifth picture */
-
-main section .survey img {
+.tech img {
 
     width: 450px;
     height: 300px;
-    float: right;
-    position: absolute;
-    right: 0;
-    left: 500px;
-    top: 920px;
+    position: relative;
+    left: 20px;
 }
 
-main section .survey figcaption {
+/* above is the fifth image */
 
-    text-align: right;
-    position: absolute;
-    top: 1235px;
-    right: 50px;
+.survey a {
+
+    position: relative;
+    top: 310px;
+    right: 420px;
+    width: auto;
+    white-space: nowrap;
+    display: block;
+    font-size: 22px;
+    color: darkgreen;
 }
+
+.survey a:hover {
+
+    color: limegreen;
+    text-decoration-color: limegreen;
+}
+
+.survey {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+}
+
+.survey img {
+
+    width: 450px;
+    height: 300px;
+    position: relative;
+    left: 20px;
+}
+
+/* above is the sixth image */
 
 /* above this contains the css code for all the images and captions in the research page */
 
-
 .end {
 
-    position: absolute;
-    top: 1275px;
+    position: relative;
+    top: 250px;
 }
 
 /* this div is for controlling the footer of this main area */
@@ -225,27 +301,16 @@ main section .survey figcaption {
 
     width: 150px;
     height: 70px;
-    margin-top: 50px;
+    margin-top: 95px;
     font-size: 20px;
     text-shadow: 2px;
     background-color: darkgreen;
     color: white;
     font-weight: bold;
     border: none;
-
-}
-
-.furtherlinks {
-
-    width: 150px;
-    height: 70px;
-    margin-top: 75px;
-    font-size: 20px;
-    text-shadow: 2px;
-    background-color: darkgreen;
-    color: white;
-    font-weight: bold;
-    border: none;
+    position: relative;
+    left: 380px;
+    bottom: 120px;
 
 }
 
@@ -261,26 +326,32 @@ main section .survey figcaption {
 
 }
 
-hr {
+.end hr {
 
     background-color: darkgreen;
-    border: 1px solid darkgreen;
-    width: 550px;
-    margin-top: 45px;
+    width: 1600px;
+    height: 3px;
+    position: relative;
+    left: 80px;
+    top: 70px;
 
 }
 
-main p {
+.end p {
 
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 1.5px;
     margin-top: 2px;
     padding-top: 5px;
+    position: relative;
+    right: 310px;
+    top: 70px;
+    white-space: nowrap;
 
 }
 
-main p span {
+.end p span {
 
     font-weight: bold;
     font-size: 25px;
