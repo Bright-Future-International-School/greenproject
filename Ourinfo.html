@@ -20,37 +20,6 @@
                 document.getElementById("Sidenav").style.width = "0";
 
             }
-
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides (n) {
-                showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-            function showSlides (n) {
-                let i;
-                let slides = 
-                document.getElementsByClassName("fading");
-                let dots = 
-                document.getElementsByClassName("dot");
-                
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for  (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-                for (i = 0; i < dots.length; i++) { dots[i].className = dots [i].className.replace("    active", "");
-            }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += "   active";
-            }
-            {
-            slideIndex = 1;
-            
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides , 1000);
-            }
         </script>
 
     </head>
@@ -82,43 +51,39 @@
             <br>
             <p>Our Teammate consists of four very smart students. As Part of the Science Club ran by Professor Kashif and Club President Mishaal Malik, We're here to introduce our students responsible for this wonderful project.</p>
             <br> <!-- This part of the code isn't completed, its pure CSS as of right now, still needs to re-do it -->
-          
-                <div class="slideshow-container">
-                    <div class="fading">
-                    
-                        <img src="image slider/image.png" alt="image" style="width: auto; height: auto; position: absolute; top: 0; left: 70px;">
-                    </div>
-                
-            <div class="fading">
-                <img src="image slider/image1.png" alt="image1" style="width: auto; height: auto; position: absolute; top: 0; left: 70px;">
-            </div>
-            <div class="fading">
-                <img src="image slider/image2.png" alt="image2" style="width: auto; height: auto; position: absolute; top: 0; left: 70px;">
-            </div>
-            <div class="fading">
-                <img src="image slider/image3.png" alt="image3" style="width: auto; height: auto; position: absolute; top: 0; left: 70px;">
-            </div>
-            <div class="fading">
-                <img src="image slider/image4.png" alt="image4" style="width: auto; height: auto; position: absolute; top: 0; left: 70px;">
-            </div>
-            <br>
-            <a class="prev" onclick="plusSlides(-1)"><span class="material-symbols-outlined">
-                arrow_back_ios
-                </span></a>
-            <a class="next" onclick="plusSlides(1)"><span class="material-symbols-outlined">
-                arrow_forward_ios </span></a>
-            </div>
-            <br>
-            <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <section id="advert"> <!-- This is for the Advert Carousel -->
+                <img class="mySlides" src="image slider/image.png" alt="Mohammad Faiyad">
+                <img class="mySlides" src="image slider/image3.png" alt="Abdulla Midyan">
+                <img class="mySlides" src="image slider/image4.png" alt="Ayesha Tariq">
+                <img class="mySlides" src="image slider/image1.png" alt="Mobolaji">
+          </section>
+                  <!--Add carousel here or in CSS -->
+                  <script>
+                     var myIndex = 0;
+                carousel();
+                        
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 3000);
+                }
+
+                  </script>
             </div>
             <br>
+            <div class="infoend">
+            <a href="index.html"><button class="backhome">Back Home</button></a>
             <hr>
             <p class="infos">Bright Future International School <span>|</span> Abu Hamour </p>
+            </div>
         </main>
     </body>
 </html>
