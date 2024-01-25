@@ -1,1 +1,248 @@
-/* this page is for the energy, food, water, survey, sciencetech and susqatar pages and still yet to be updated */
+* {
+
+    margin: 0px auto;
+    width: 1024px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-image: url(second\ bg.jpg);
+    background-color: rgba(14, 112, 9, 0.697);
+    z-index: 0;
+
+}
+
+header {
+
+    background-color: rgba(191, 237, 172, 0.752);
+    text-align: center;
+    z-index: 1;
+    width: 1380px;
+    position: relative;
+    right: 178px;
+    height: 310px;
+}
+
+header img {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+main {
+
+    z-index: 2;
+    background-color: rgba(255,255,255, 0.9);
+    position: relative;
+    bottom: 60px;
+    height: 1450px;
+
+}
+
+main img {
+
+    width: 600px;
+    height: 300px;
+    left: 200px;
+    position: relative;
+
+}
+
+main h2 {
+
+    text-align: center;
+}
+
+.further {
+
+    width: 220px;
+    height: 70px;
+    margin-top: 50px;
+    font-size: 20px;
+    text-shadow: 2px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    left: 400px;
+
+}
+
+.further:hover {
+
+    box-shadow: inset;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    color: darkgreen;
+    transition-duration: 0.9984721110051113s;
+    border: 2px solid darkgreen;
+
+}
+
+hr {
+
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    width: 550px;
+    margin-top: 45px;
+
+}
+
+main p {
+
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+    padding-top: 5px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+}
+
+.energypage p a {
+
+    color: black;
+    font-weight: bold;
+
+}
+
+.energypage li {
+
+    font-size: 18px;
+    width: 1000px;
+}
+
+.suspage {
+
+    height: 1550px;
+}
+
+.suspage p a {
+
+    color: black;
+    font-weight: bold;
+}
+
+.suspage li {
+
+    font-size: 18px;
+    width: 996px;
+
+}
+
+.waterpage p a {
+
+    color: black;
+    font-weight: bold;
+}
+
+.waterpage li {
+
+    font-size: 18px;
+    width: 996px;
+}
+
+main p span {
+
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.end p {
+
+    text-align: center;
+}
+
+.susend {
+
+    bottom: 50px;
+    position: relative;
+}
+
+header button {
+
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    color: darkgreen;
+    position: relative;
+    right: 600px;
+    top: 20px;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    
+
+}
+
+header button:hover {
+
+    background-color: darkgreen;
+    color: white;
+    cursor: default;
+    transition: 0.99211510005s;
+
+}
+
+
+
+.sidenavig {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenavig a {
+
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgreen;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.sidenavig a:hover {
+
+    color: palegreen;
+}
+
+.sidenavig .closebutton {
+
+    position: absolute;
+    top: 5px;
+    font-size: 55px;
+    left: 160px;
+
+}
+
+@media screen and (max-height:300px) {
+    .sidenavig {padding-top: 15px;}
+    .sidenavig a {font-size: 18px;}
+}
+
