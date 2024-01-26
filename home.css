@@ -16,7 +16,6 @@ html {
 body {
 
     background-image: url(second\ bg.jpg);
-    background-size: % 50%;
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
     max-width: 1380px;
@@ -29,7 +28,7 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
-    width: 1380px;
+    max-width: 1380px;
     position: relative;
     right: 178px;
     height: 310px;
