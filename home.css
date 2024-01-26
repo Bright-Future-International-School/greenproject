@@ -1,7 +1,8 @@
 * {
 
     margin: 0px auto;
-    width: 1024px;
+    max-width: 1920px;
+    max-height: 1024px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 
@@ -15,7 +16,7 @@ html {
 body {
 
     background-image: url(second\ bg.jpg);
-    background-size: 50% 50%;
+    background-size: % 50%;
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
     max-width: 1380px;
