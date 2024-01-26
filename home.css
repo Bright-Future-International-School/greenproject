@@ -272,68 +272,55 @@ header button:hover {
 
         scroll-behavior: smooth;
         overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
     }
 
-    body {
+    html::-webkit-scrollbar {
 
-        max-width: 768px;
+        display: none;
+
     }
+
 
     header {
 
-        max-width: 768px;
+        max-width: 480px;
+        width: 480px;
+        position: relative;
+        right: 300px;
 
     }
 
     header h1 {
 
         position: relative;
-        right: 200px;
+        right: 300px;
     }
 
     header h3 {
 
         position: relative;
-        right: 200px;
+        right: 300px;
     }
 
     header img {
 
         position: relative;
-        right: 80px;
+        right: 30px;
     }
 
-    main {
+    .mobimages {
 
-        max-width: 750px;
+        display: block;
+    }
+
+    .mySlides {
+
         position: relative;
-        right: 200px;
-    }
-
-    main h2 {
-
-        text-align: center;
-        width: 750px;
-        position: relative;
-        right: 75px;
-    }
-
-    main p {
-
-        width: 500px;
-        position: relative;
-        right: 75px;
-        padding-left: 5px;
-    }
-
-    main img {
-
-        width: 650px;
-    }
-
-    section {
-
-        width: 750px;
+        width: 350px;
+        right: 300px;
     }
 
     .setimages, .setimages2 {
@@ -341,55 +328,70 @@ header button:hover {
         display: none;
     }
 
-    .mobimages {
+    header button {
 
-        display: block;
-        width: 700px;
+        display:block;
+        left: -150px;
+        top: 10px;
     }
 
-    .mobimages img {
+    main {
 
-        width: 650px;
+        max-width: 480px;
+        width: 480px;
+        position: relative;
+        right: 300px;
     }
 
-    .mySlides {
+    main h2 {
 
-        display: none;
+        position: relative;
+        right: 300px;
+        font-size: 25px;
+    }
     
+    main p {
+
+        position: relative;
+        right: 30px;
+        width: 350px;
+        text-align: justify;
+        font-size: 22px;
+    }
+
+    main img {
+
+        width: 350px;
+        position: relative;
+        right: 25px;
     }
 
     .homeend {
 
         position: relative;
-        right: 75px;
-        width: 750px;
+        width: 400px;
     }
 
     .homeend .further {
 
         position: relative;
-        left: 20px;
+        right: 20px;
+
     }
 
     .homeend hr {
 
+        width: 350px;
         position: relative;
-        width: 300px;
-        left: 20px;
+        right: 25px;
 
     }
-    
+
     .homeend p {
 
-        position: relative;
-        left: 20px;
+        width: 350px;
+        font-size: 20px;
+        font-weight: bold;
     }
-
-    header button {
-
-        display: block;
-        position: relative;
-        left: -250px;
-        top: 10px;
-    }
+    
 }
