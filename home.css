@@ -254,40 +254,142 @@ header button:hover {
 
 }
 
+.mobimages {
+
+    display: none;
+
+}
+
+
 @media screen and (max-height:300px) {
     .sidenavig {padding-top: 15px;}
     .sidenavig a {font-size: 18px;}
 }
-
+/* Responsive adjustments for mobile devices */
 @media screen and (max-width: 600px) {
+    
+    html {
+
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    body {
+
+        max-width: 768px;
+    }
+
     header {
-        padding: 10px;
+
+        max-width: 768px;
+
+    }
+
+    header h1 {
+
+        position: relative;
+        right: 200px;
+    }
+
+    header h3 {
+
+        position: relative;
+        right: 200px;
+    }
+
+    header img {
+
+        position: relative;
+        right: 80px;
     }
 
     main {
-        width: 100%;
-        bottom: 0;
+
+        max-width: 750px;
+        position: relative;
+        right: 200px;
+    }
+
+    main h2 {
+
+        text-align: center;
+        width: 750px;
+        position: relative;
+        right: 75px;
+    }
+
+    main p {
+
+        width: 500px;
+        position: relative;
+        right: 75px;
+        padding-left: 5px;
+    }
+
+    main img {
+
+        width: 650px;
     }
 
     section {
-        flex-direction: column;
+
+        width: 750px;
     }
 
-    .setimages p, .setimages2 p {
-        position: static;
-        text-align: center;
+    .setimages, .setimages2 {
+
+        display: none;
     }
 
-    .further, .furtherlinks, header button, hr {
-        width: auto;
-        margin: 10px auto;
+    .mobimages {
+
+        display: block;
+        width: 700px;
     }
 
-    .sidenavig, .sidenavig a, .sidenavig .closebutton {
-        font-size: 18px;
+    .mobimages img {
+
+        width: 650px;
     }
 
-    .sidenavig {
-        width: 70%;
+    .mySlides {
+
+        display: none;
+    
+    }
+
+    .homeend {
+
+        position: relative;
+        right: 75px;
+        width: 750px;
+    }
+
+    .homeend .further {
+
+        position: relative;
+        left: 20px;
+    }
+
+    .homeend hr {
+
+        position: relative;
+        width: 300px;
+        left: 20px;
+
+    }
+    
+    .homeend p {
+
+        position: relative;
+        left: 20px;
+    }
+
+    header button {
+
+        display: block;
+        position: relative;
+        left: -250px;
+        top: 10px;
     }
 }
