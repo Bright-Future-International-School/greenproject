@@ -436,13 +436,8 @@ header button:hover {
         width: 600px;
     }
 
-    html {
-
-        overflow-x:hidden;
-    }
-
-    body {
-        overflow-x: hidden;
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     header {
@@ -480,127 +475,48 @@ header button:hover {
         max-width: 600px;
     }
 
-    main h2 {
+    main section {
+        width: 600px;
+    }
 
+    main h2 {
         position: relative;
-        left: 170px;
+        left: 150px; /* Moved a bit more to the left */
     }
 
     main p {
-
         padding-left: 5px;
         padding-right: 5px;
         width: 400px;
         text-align: justify;
         position: relative;
-        left: 45px;
+        left: 25px; /* Moved a bit more to the left */
     }
 
-    main section {
-        width: 600px;
-    }
-
-    .energy, .susqatar, .water, .food, .tech, .survey {
-        right: 0; /* Adjust right positioning */
-        margin-bottom: 50px;
-        width: 100%;
-        float: none;
-        position: relative;
-        top: 0;
-        margin-bottom: 50px; /* Increased spacing after each section */
-    }
-
+    /* Adjusting image positions */
     .energy img, .water img, .food img, .tech img {
-        width: 450px;
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 15px; /* Space between image and link */
         position: relative;
-        left: 100px;
+        left: 80px; /* Adjusted to the left */
     }
 
     .susqatar img {
-
-        width: 500px;
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 15px; /* Space between image and link */
         position: relative;
-        left: 110px;
+        left: 90px; /* Adjusted to the left */
     }
 
     .survey img {
-
-        width: 600px;
-        height: auto;
-        margin-bottom: 15px;
         position: relative;
-        left: 113px;
+        left: 93px; /* Adjusted to the left */
     }
 
-    .energy a {
-
-        font-size: 18px;
+    .energy a, .water a, .food a, .tech a, .susqatar a, .survey a {
         display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 290px;
-        color: darkgreen;
-        text-align: center; /* Center text */
-    }
-
-    .susqatar a {
-
+        position: relative;
+        top: 300px;
+        right: 270px; /* Adjusted to the left */
         font-size: 18px;
-        display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 200px;
         color: darkgreen;
-        text-align: center; /* Center text */
-
-    }
-
-    .water a {
-
-        font-size: 18px;
-        display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 200px;
-        color: darkgreen;
-        text-align: center; /* Center text */
-    }
-
-    .food a {
-
-        font-size: 18px;
-        display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 290px;
-        color: darkgreen;
-        text-align: center; /* Center text */
-    }
-
-    .tech a {
-
-        font-size: 18px;
-        display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 300px;
-        color: darkgreen;
-        text-align: center; /* Center text */
-    }
-
-    .survey a {
-
-        font-size: 18px;
-        display: block;
-        position: relative; /* Relative positioning for links */
-        top: 300px; /* Position link below the image */
-        right: 290px;
-        color: darkgreen;
-        text-align: center; /* Center text */
+        text-align: center;
     }
 
     .further {
@@ -614,23 +530,26 @@ header button:hover {
 
     .end hr {
         width: 95%;
-        left: 65px;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
         top: -100px;
     }
 
     .end p {
         font-size: 16px;
-        right: 160px;
+        position: relative;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
         top: -85px;
     }
 
     header button {
-        position: fixed; /* Keep the button fixed on the screen */
+        position: fixed;
         width: 100px;
         height: 40px;
         font-size: 20px;
         top: 10px;
-        left: 10px; /* Adjust as needed to keep it on the left */
+        left: 10px; /* Keep on the left */
     }
 
     .sidenavig a {
