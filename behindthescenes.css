@@ -441,6 +441,10 @@ header button:hover {
         overflow-x:hidden;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         width: 100%;
         right: 0;
@@ -472,7 +476,8 @@ header button:hover {
         bottom: 0;
         height: 2560px;
         padding-bottom: 20px;
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
     }
 
     main h2 {
@@ -496,11 +501,12 @@ header button:hover {
     }
 
     .energy, .susqatar, .water, .food, .tech, .survey {
+        right: 0; /* Adjust right positioning */
+        margin-bottom: 50px;
         width: 100%;
         float: none;
         position: relative;
         top: 0;
-        right: 80px;
         margin-bottom: 50px; /* Increased spacing after each section */
     }
 
@@ -619,11 +625,12 @@ header button:hover {
     }
 
     header button {
+        position: fixed; /* Keep the button fixed on the screen */
         width: 100px;
         height: 40px;
         font-size: 20px;
         top: 10px;
-        left: -250px;
+        left: 10px; /* Adjust as needed to keep it on the left */
     }
 
     .sidenavig a {
