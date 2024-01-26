@@ -13,14 +13,17 @@
 
         <script>
             function openNav() {
-                document.getElementById("Sidenav").style.width = "250px";
+                // Check if the screen width is less than or equal to 600px
+                if (window.innerWidth <= 600) {
+                    document.getElementById("Sidenav").style.width = "70%";
+                } else {
+                    document.getElementById("Sidenav").style.width = "250px";
+                }
             }
-
+        
             function closeNav() {
                 document.getElementById("Sidenav").style.width = "0";
-
             }
-
         </script>
     </head>
     <body> <!-- Add an image and some transparency to the image -->
@@ -62,17 +65,13 @@
                     <img src="https://m.thepeninsulaqatar.com/get/maximage/20240116_1705386719-523.jpeg?1705386719" alt="test">
                     <a href="susqatar.html">Sustainability in Qatar</a>
                 </div>
-                <div class="water"> <!-- Remove this area and put the contents of this website in sustainability in qatar-->
-                    <img src="https://m.thepeninsulaqatar.com/get/maximage/20210927_1632734772-289515.JPG?1635250003" alt="test">
-                    <a href="water.html">Water Conservation in Qatar</a>
+                <div class="tech">
+                    <img src="https://aiph.org/wp-content/uploads/2023/02/Doha-Image_2MB.jpg" alt="test">
+                    <a href="sciencetech.html">How Science & Technology have affected Qatar</a>
                 </div>
                 <div class="food">
                     <img src="https://i.pinimg.com/564x/33/56/c2/3356c24eb2fe0d03133b9400fb4f1140.jpg" alt="test">
                     <a href="food.html">The Impact of food preservation on food waste</a>
-                </div>
-                <div class="tech">
-                    <img src="https://aiph.org/wp-content/uploads/2023/02/Doha-Image_2MB.jpg" alt="test">
-                    <a href="sciencetech.html">How Science & Technology have affected Qatar</a>
                 </div>
                 <div class="survey">
                     <img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="test">
