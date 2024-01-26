@@ -2,7 +2,7 @@
 
     margin: 0px auto;
     max-width: 1920px;
-    max-height: 1024px;
+    max-height: 1400px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 
@@ -12,15 +12,21 @@ html {
 
     scroll-behavior: smooth;
     max-width: 1920px;
-    max-height: 1380px;
+    max-height: 1400px;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+
+    display: none;
 }
 
 body {
 
-    background-image: url(second\ bg.jpg);
+    background-image: url(home\ assets/bodybackground.jpg);
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
-    max-width: 1380px;
+    max-width: 1200px;
 
 }
 
@@ -50,13 +56,14 @@ main {
     background-color: rgba(255,255,255, 0.9);
     position: relative;
     bottom: 60px;
-    height: 1380px;
+    height: 1220px;
+    max-width: 1200px;
 
 }
 
 main img {
 
-    width: 600px;
+    width: 480px;
     height: 300px;
 
 }
@@ -65,6 +72,8 @@ section {
 
     display: flex;
     margin-top: 50px;
+    position: relative;
+    bottom: 50px;
 }
 
 .setimages img {
@@ -139,6 +148,8 @@ section {
     color: white;
     font-weight: bold;
     border: none;
+    position: relative;
+    top: 20px;
 
 }
 
@@ -168,6 +179,12 @@ section {
 
 }
 
+.homeend {
+
+    position: relative;
+    bottom: 75px;
+}
+
 hr {
 
     background-color: darkgreen;
@@ -184,6 +201,8 @@ main p {
     letter-spacing: 1.5px;
     margin-top: 2px;
     padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -202,10 +221,11 @@ header button {
     background-color: white;
     color: darkgreen;
     position: relative;
-    right: 600px;
+    right: 500px;
     top: 20px;
     border-radius: 25px;
     padding-bottom: 5px;
+    
     
 
 }
@@ -231,6 +251,7 @@ header button:hover {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    
 
 }
 
