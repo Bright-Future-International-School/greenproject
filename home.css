@@ -19,7 +19,7 @@ body {
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
     max-width: 1920px;
-    height: 1024px;
+    max-height: 1024px;
 
 }
 
@@ -28,7 +28,7 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
-    width: 1920px;
+    width: 1380px;
     position: relative;
     left: 300px;
     height: 310px;
