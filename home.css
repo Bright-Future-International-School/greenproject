@@ -266,7 +266,7 @@ header button:hover {
     .sidenavig a {font-size: 18px;}
 }
 /* Responsive adjustments for mobile devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     
     html {
 
