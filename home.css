@@ -15,6 +15,7 @@ html {
 body {
 
     background-image: url(second\ bg.jpg);
+    background-size: 50% 50%;
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
     max-width: 1380px;
