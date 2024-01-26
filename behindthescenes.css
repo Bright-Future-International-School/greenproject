@@ -428,12 +428,12 @@ header button:hover {
     .sidenavig a {font-size: 18px;}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        width: 768px;
+        width: 600px;
     }
 
     html {
@@ -446,22 +446,53 @@ header button:hover {
         right: 0;
         height: auto;
     }
+    
+    header h1 {
+
+        position: relative;
+        right: 50px;
+    }
+
+    header h3 {
+
+        position: relative;
+        right: 50px;
+    }
 
     header img {
         width: 50px;
         height: 50px;
+        position: relative;
+        right: 50px;
     }
 
     main {
-        text-align: center;
+        text-align: justify;
         position: relative;
         bottom: 0;
-        height: auto;
+        height: 2560px;
         padding-bottom: 20px;
+        width: 600px;
+    }
+
+    main h2 {
+
+        position: relative;
+        left: 170px;
+    }
+
+    main p {
+
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 400px;
+        text-align: justify;
+        position: relative;
+        left: 45px;
     }
 
     main section {
-        width: auto;
+        width: 600px;
     }
 
     .energy, .susqatar, .water, .food, .tech, .survey {
@@ -469,54 +500,130 @@ header button:hover {
         float: none;
         position: relative;
         top: 0;
+        right: 80px;
         margin-bottom: 50px; /* Increased spacing after each section */
     }
 
-    .energy img, .susqatar img, .water img, .food img, .tech img, .survey img {
-        width: 500px;
+    .energy img, .water img, .food img, .tech img {
+        width: 450px;
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 15px; /* Space between image and link */
         position: relative;
         left: 100px;
     }
 
-    .energy a, .susqatar a, .water a, .food a, .tech a, .survey a {
+    .susqatar img {
+
+        width: 500px;
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px; /* Space between image and link */
+        position: relative;
+        left: 110px;
+    }
+
+    .survey img {
+
+        width: 600px;
+        height: auto;
+        margin-bottom: 15px;
+        position: relative;
+        left: 113px;
+    }
+
+    .energy a {
+
         font-size: 18px;
         display: block;
         position: relative; /* Relative positioning for links */
         top: 300px; /* Position link below the image */
-        left: 5px;
+        right: 290px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+    }
+
+    .susqatar a {
+
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        right: 200px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+
+    }
+
+    .water a {
+
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        right: 200px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+    }
+
+    .food a {
+
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        right: 290px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+    }
+
+    .tech a {
+
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        right: 300px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+    }
+
+    .survey a {
+
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        right: 290px;
         color: darkgreen;
         text-align: center; /* Center text */
     }
 
     .further {
-        width: 100px;
+        width: 120px;
         height: 50px;
         margin-top: 20px;
         font-size: 16px;
-        left: 0;
-        bottom: 0;
+        left: 170px;
+        bottom: 200px;
     }
 
     .end hr {
-        width: 100%;
-        left: 0;
-        top: 0;
+        width: 95%;
+        left: 65px;
+        top: -100px;
     }
 
     .end p {
         font-size: 16px;
-        right: 0;
-        top: 0;
+        right: 160px;
+        top: -85px;
     }
 
     header button {
         width: 100px;
         height: 40px;
         font-size: 20px;
-        right: 0;
         top: 10px;
+        left: -250px;
     }
 
     .sidenavig a {
