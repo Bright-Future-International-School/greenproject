@@ -149,7 +149,6 @@ section {
     font-weight: bold;
     border: none;
     position: relative;
-    top: 20px;
 
 }
 
@@ -404,7 +403,7 @@ header button:hover {
 
         position: relative;
         right: 20px;
-        bottom: 10px;
+        bottom: 30px;
     }
 
     .homeend hr {
