@@ -1,7 +1,8 @@
 * {
 
     margin: 0px auto;
-    width: 1024px;
+    max-width: 1920px;
+    max-height: 1500px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 
@@ -10,13 +11,20 @@
 html {
 
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+
+    display: none;
 }
 
 body {
 
-    background-image: url(second\ bg.jpg);
+    background-image: url(home\ assets/bodybackground.jpg);
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
+    max-width: 1380px;
 
 }
 
@@ -25,9 +33,8 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
-    width: 1380px;
+    max-width: 1380px;
     position: relative;
-    right: 178px;
     height: 310px;
 }
 
@@ -45,7 +52,8 @@ main {
     background-color: rgba(255,255,255, 0.9);
     position: relative;
     bottom: 60px;
-    height: 1600px;
+    height: 1500px;
+    max-width: 1200px;
 
 }
 
@@ -138,11 +146,11 @@ div {
 
 /* above is the second image */
 
-.water a {
+.tech a {
 
     position: relative;
     top: 310px;
-    right: 320px;
+    right: 420px;
     width: auto;
     white-space: nowrap;
     display: block;
@@ -150,13 +158,13 @@ div {
     color: darkgreen;
 }
 
-.water a:hover {
+.tech a:hover {
 
     color: limegreen;
     text-decoration-color: limegreen;
 }
 
-.water {
+.tech {
 
     width: 450px;
     height: 300px;
@@ -166,7 +174,7 @@ div {
 
 }
 
-.water img {
+.tech img {
 
     width: 450px;
     height: 300px;
@@ -214,40 +222,6 @@ div {
 
 /* above is the fourth image */
 
-.tech a {
-
-    position: relative;
-    top: 310px;
-    right: 420px;
-    width: auto;
-    white-space: nowrap;
-    display: block;
-    font-size: 22px;
-    color: darkgreen;
-}
-
-.tech a:hover {
-
-    color: limegreen;
-    text-decoration-color: limegreen;
-}
-
-.tech {
-
-    width: 450px;
-    height: 300px;
-    position: relative;
-    float: left;
-    top: 100px;
-}
-
-.tech img {
-
-    width: 450px;
-    height: 300px;
-    position: relative;
-    left: 20px;
-}
 
 /* above is the fifth image */
 
@@ -274,7 +248,8 @@ div {
     width: 450px;
     height: 300px;
     position: relative;
-    top: 100px;
+    top: 120px;
+    right: 20px;
 }
 
 .survey img {
@@ -309,7 +284,7 @@ div {
     font-weight: bold;
     border: none;
     position: relative;
-    left: 380px;
+    left: 520px;
     bottom: 120px;
 
 }
@@ -332,7 +307,7 @@ div {
     width: 1600px;
     height: 3px;
     position: relative;
-    left: 80px;
+    left: 150px;
     top: 70px;
 
 }
@@ -345,7 +320,7 @@ div {
     margin-top: 2px;
     padding-top: 5px;
     position: relative;
-    right: 310px;
+    right: 385px;
     top: 70px;
     white-space: nowrap;
 
@@ -366,7 +341,7 @@ header button {
     background-color: white;
     color: darkgreen;
     position: relative;
-    right: 600px;
+    right: 400px;
     top: 20px;
     border-radius: 25px;
     padding-bottom: 5px;
@@ -428,44 +403,33 @@ header button:hover {
     .sidenavig a {font-size: 18px;}
 }
 
-@media screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 600px;
-    }
-
-    html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-
-    header {
-        width: 100%;
-        right: 0;
-        height: auto;
-    }
+@media screen and (max-width: 480px) {
     
-    header h1 {
+    * {
 
-        position: relative;
-        right: 50px;
+        max-width: 480px;
+        margin: auto;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    header h3 {
+    html {
 
-        position: relative;
-        right: 50px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
     }
 
-    header img {
-        width: 50px;
-        height: 50px;
-        position: relative;
-        right: 50px;
+    html::-webkit-scrollbar {
+
+        display: none;
+
     }
 
     main {
+
         text-align: justify;
         position: relative;
         bottom: 0;
@@ -544,12 +508,13 @@ header button:hover {
     }
 
     header button {
-        position: fixed;
+        
+        position: relative;
         width: 100px;
         height: 40px;
         font-size: 20px;
         top: 10px;
-        left: 10px; /* Keep on the left */
+        left: -120px; /* Keep on the left */
     }
 
     .sidenavig a {
