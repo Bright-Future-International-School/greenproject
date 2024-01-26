@@ -258,3 +258,36 @@ header button:hover {
     .sidenavig {padding-top: 15px;}
     .sidenavig a {font-size: 18px;}
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+        bottom: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .setimages p, .setimages2 p {
+        position: static;
+        text-align: center;
+    }
+
+    .further, .furtherlinks, header button, hr {
+        width: auto;
+        margin: 10px auto;
+    }
+
+    .sidenavig, .sidenavig a, .sidenavig .closebutton {
+        font-size: 18px;
+    }
+
+    .sidenavig {
+        width: 70%;
+    }
+}
