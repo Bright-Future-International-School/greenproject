@@ -11,6 +11,8 @@
 html {
 
     scroll-behavior: smooth;
+    max-width: 1920px;
+    max-height: 1380px;
 }
 
 body {
@@ -18,8 +20,7 @@ body {
     background-image: url(second\ bg.jpg);
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
-    max-width: 1920px;
-    max-height: 1024px;
+    max-width: 1380px;
 
 }
 
@@ -28,9 +29,10 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
-    width: 1380px;
+    max-width: 1380px;
     position: relative;
-    left: 300px;
+    left: 0;
+    right: 178px;
     height: 310px;
 }
 
@@ -48,7 +50,7 @@ main {
     background-color: rgba(255,255,255, 0.9);
     position: relative;
     bottom: 60px;
-    height: 1270px;
+    height: 1380px;
 
 }
 
@@ -292,26 +294,26 @@ header button:hover {
         max-width: 480px;
         width: 480px;
         position: relative;
-        right: 300px;
+        right: 400px;
 
     }
 
     header h1 {
 
         position: relative;
-        right: 300px;
+        right: 55px;
     }
 
     header h3 {
 
         position: relative;
-        right: 300px;
+        right: 55px;
     }
 
     header img {
 
         position: relative;
-        right: 30px;
+        right: 60px;
     }
 
     .mobimages {
@@ -323,7 +325,8 @@ header button:hover {
 
         position: relative;
         width: 350px;
-        right: 300px;
+        right: 55px;
+        bottom: 60px;
     }
 
     .setimages, .setimages2 {
@@ -343,21 +346,20 @@ header button:hover {
         max-width: 480px;
         width: 480px;
         position: relative;
-        right: 300px;
     }
 
     main h2 {
 
         position: relative;
-        right: 300px;
+        right: 45px;
         font-size: 25px;
     }
     
     main p {
 
         position: relative;
-        right: 30px;
-        width: 350px;
+        right: 55px;
+        width: 300px;
         text-align: justify;
         font-size: 22px;
     }
@@ -366,27 +368,30 @@ header button:hover {
 
         width: 350px;
         position: relative;
-        right: 25px;
+        right: 55px;
     }
 
     .homeend {
 
         position: relative;
         width: 400px;
+        right: 25px;
+        bottom: 85px;
     }
 
     .homeend .further {
 
         position: relative;
         right: 20px;
-
+        bottom: 10px;
     }
 
     .homeend hr {
 
         width: 350px;
         position: relative;
-        right: 25px;
+        right: 30px;
+        bottom: 30px;
 
     }
 
@@ -395,6 +400,9 @@ header button:hover {
         width: 350px;
         font-size: 20px;
         font-weight: bold;
+        position: relative;
+        right: 25px;
+        bottom: 28px;
     }
     
 }
