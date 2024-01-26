@@ -28,7 +28,7 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
-    max-width: 1380px;
+    width: auto;
     position: relative;
     right: 178px;
     height: 310px;
