@@ -428,5 +428,104 @@ header button:hover {
     .sidenavig a {font-size: 18px;}
 }
 
-/* Will have to re do the image slider with javascript and CSS integration*/
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 768px;
+    }
+
+    html {
+
+        overflow-x:hidden;
+    }
+
+    header {
+        width: 100%;
+        right: 0;
+        height: auto;
+    }
+
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+
+    main {
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    main section {
+        width: auto;
+    }
+
+    .energy, .susqatar, .water, .food, .tech, .survey {
+        width: 100%;
+        float: none;
+        position: relative;
+        top: 0;
+        margin-bottom: 50px; /* Increased spacing after each section */
+    }
+
+    .energy img, .susqatar img, .water img, .food img, .tech img, .survey img {
+        width: 500px;
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px; /* Space between image and link */
+        position: relative;
+        left: 100px;
+    }
+
+    .energy a, .susqatar a, .water a, .food a, .tech a, .survey a {
+        font-size: 18px;
+        display: block;
+        position: relative; /* Relative positioning for links */
+        top: 300px; /* Position link below the image */
+        left: 5px;
+        color: darkgreen;
+        text-align: center; /* Center text */
+    }
+
+    .further {
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        font-size: 16px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .end hr {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .end p {
+        font-size: 16px;
+        right: 0;
+        top: 0;
+    }
+
+    header button {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        right: 0;
+        top: 10px;
+    }
+
+    .sidenavig a {
+        font-size: 20px;
+    }
+
+    .sidenavig .closebutton {
+        font-size: 40px;
+        left: 120px;
+    }
+}
 
