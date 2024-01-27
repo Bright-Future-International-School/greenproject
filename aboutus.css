@@ -1,7 +1,8 @@
 * {
 
     margin: 0px auto;
-    width: 1024px;
+    max-width: 1920px;
+    max-height: 1024px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
@@ -14,9 +15,11 @@ html {
 
 body {
 
-    background-image: url(second\ bg.jpg);
+    background-image: url(home\ assets/bodybackground.jpg);
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
+    max-width: 1920px;
+    height: 1024px;
 
 }
 
@@ -25,10 +28,23 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
+    max-width: 1380px;
     width: 1380px;
     position: relative;
-    right: 178px;
     height: 310px;
+}
+
+header h1 {
+
+    position: relative;
+    font-size: 36px;
+}
+
+header h3 {
+
+    position: relative;
+    font-size: 32px;
+    bottom: 15px;
 }
 
 header img {
@@ -46,6 +62,8 @@ main {
     position: relative;
     bottom: 60px;
     height: 1270px;
+    max-width: 1380px;
+    width: 1380px;
 
 }
 
@@ -97,15 +115,6 @@ main img {
 
 }
 
-hr {
-
-    background-color: darkgreen;
-    border: 1px solid darkgreen;
-    width: 550px;
-    margin-top: 45px;
-
-}
-
 main p {
 
     font-size: 18px;
@@ -114,6 +123,15 @@ main p {
     margin-top: 2px;
     padding-top: 5px;
 
+}
+
+.about p {
+
+    width: 1300px;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
 }
 
 main p span {
@@ -202,7 +220,7 @@ header button:hover {
 section {
 
     position: relative;
-    top: 80px;
+    top: 5px;
 
 }
 
@@ -214,12 +232,35 @@ section img {
     
 }
 
+section button {
+
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    border-radius: 80px;
+    margin-left: 45px;
+    right: 25px;
+    background-color: black;
+}
+
+section button .material-symbols-outlined {
+
+    width: 70px;
+    text-align: center;
+    position: relative;
+    right: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
 .backhome {
 
     width: 200px;
     height: 60px;
     position: relative;
-    top: 20px;
     font-size: 22px;
     background-color: darkgreen;
     color: white;
@@ -238,5 +279,156 @@ section img {
 .infoend {
 
     position: relative;
-    top: 220px;
+    top: 70px;
+}
+
+.infoend hr {
+
+    position: relative;
+    height: 3px;
+    font-weight: bold;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    width: 550px;
+    margin-top: 45px;
+
+
+}
+
+.infoend p {
+
+    position: relative;
+    width: 1380px;
+    left: 345px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+
+    * {
+
+        max-width: 480px;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    html {
+
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+    }
+
+    html::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    header {
+
+        max-width: 480px;
+        width: 480px;
+        position: relative;
+        
+    }
+
+    header h1 {
+
+        font-size: 20px;
+        position: relative;
+        right: 50px;
+    }
+
+    header h3 {
+
+        font-size: 17px;
+        position: relative;
+        right: 50px;
+    }
+
+    header img {
+        
+        position: relative;
+        right: 50px;
+    }
+
+    header button {
+
+        position: relative;
+        left: -155px;
+        top: 10px;
+        display: block;
+        width: 150px;
+
+    }
+
+    main {
+
+        max-width: 480px;
+        width: 480px;
+    }
+
+    main h1 {
+
+        font-size: 18px;
+        position: relative;
+        right: 50px;
+        width: 400px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        bottom: 10px;
+    }
+
+    .about p {
+
+        position: relative;
+        font-size: 16px;
+        width: 380px;
+        right: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: justify;
+        color: black;
+        font-weight: 400;
+    }
+
+    section img {
+
+        width: 380px;
+        height: 300px;
+        position: relative;
+        right: 40px;
+    }
+
+    section button {
+
+        position: relative;
+        right: 60px;
+    }
+
+    .infoend {
+
+        position: relative;
+        right: 35px;
+    }
+
+    .infoend hr {
+
+        max-width: 480px;
+        width: 300px;
+        position: relative;        
+    }
+
+    .infoend p {
+
+        position: relative;
+        max-width: 480px;
+        width: 380px;
+        left: 0;
+    }
+
 }
