@@ -7,10 +7,10 @@
         <meta name="author" content="Mohammad Faiyad, Abdulla Midyan, Ayesha Tariq, Mobolaji">
         <meta name="keywords" content="Qatar, Greenery, Sustainability, Protecting the environment">
         <meta name="description" content="Making Qatar Green through various ways">
-        <meta name="viewport" content="initial-scale=1.0, width=device-width">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no, maximum-scale=1">
         <link rel="stylesheet" href="aboutus.css" type="text/css">
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <script>
             function openNav() {
                 document.getElementById("Sidenav").style.width = "250px";
@@ -37,7 +37,7 @@
         <header> <!-- This is the light pale green background area-->
             <button onclick="openNav()">&#9776; Pages</button>
             <br>
-            <img src="home assets/background for body.jpg" alt="pretend logo">
+            <img src="home assets/tempicon.png.jpg" alt="pretend logo">
             <h1>Qatar Green Project</h1>
             <br>
             <h3>For Greenery, We Will Always Stand.</h3>
@@ -49,33 +49,67 @@
             <br>
             <h1>Meet The Team Responsible For This Project!</h1>
             <br>
-            <p>Our Teammate consists of four very smart students. As Part of the Science Club ran by Professor Kashif and Club President Mishaal Malik, We're here to introduce our students responsible for this wonderful project.</p>
+            <p>The Team Created under our <b>Science Club Owner,</b> Mr Kashif and our beloved <b>President of the Science Club,</b> Mishaal Malik. Our team consists of four members, Two App Builders & Two Content Writers.</p>
             <br> <!-- This part of the code isn't completed, its pure CSS as of right now, still needs to re-do it -->
+            
             <section id="advert"> <!-- This is for the Advert Carousel -->
                 <img class="mySlides" src="image slider/image.png" alt="Mohammad Faiyad">
                 <img class="mySlides" src="image slider/image3.png" alt="Abdulla Midyan">
                 <img class="mySlides" src="image slider/image4.png" alt="Ayesha Tariq">
                 <img class="mySlides" src="image slider/image1.png" alt="Mobolaji">
-          </section>
+                
+                    <button onclick="plusSlides(-1)"><span class="material-symbols-outlined">
+                         arrow_back_ios
+                    </span></button>
+                    <button onclick="plusSlides(1)"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span></button>
+                    
+            
+            </section>
                   <!--Add carousel here or in CSS -->
                   <script>
-                     var myIndex = 0;
-                carousel();
-                        
-                function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                  }
-                  myIndex++;
-                  if (myIndex > x.length) {
-                    myIndex = 1
-                  }
-                  x[myIndex - 1].style.display = "block";
-                  setTimeout(carousel, 3000);
-                }
-
+                    var slideIndex = 0;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var autoPlay;
+                  
+                    function showSlides() {
+                      var i;
+                  
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                  
+                      slideIndex++;
+                  
+                      if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                      }
+                  
+                      slides[slideIndex - 1].style.display = "block";
+                    }
+                  
+                    function plusSlides(n) {
+                      clearInterval(autoPlay);
+                  
+                      slideIndex += n;
+                  
+                      if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                      } else if (slideIndex < 1) {
+                        slideIndex = slides.length;
+                      }
+                  
+                      for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                  
+                      slides[slideIndex - 1].style.display = "block";
+                      autoPlay = setInterval(showSlides, 4000);
+                    }
+                  
+                    autoPlay = setInterval(showSlides, 4000);
+                  
                   </script>
             </div>
             <br>
