@@ -1,8 +1,10 @@
 * {
 
     margin: 0px auto;
-    width: 1024px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1920px;
+    max-height: 2200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
     box-sizing: border-box;
 
 }
@@ -10,11 +12,22 @@
 html {
 
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+
+    display: none;
+}
+
+.energypage html::-webkit-scrollbar {
+
+    display: none;
 }
 
 body {
 
-    background-image: url(second\ bg.jpg);
+    background-image: url(home\ assets/bodybackground.jpg);
     background-color: rgba(14, 112, 9, 0.697);
     z-index: 0;
 
@@ -25,9 +38,9 @@ header {
     background-color: rgba(191, 237, 172, 0.752);
     text-align: center;
     z-index: 1;
+    max-width: 1380px;
     width: 1380px;
     position: relative;
-    right: 178px;
     height: 310px;
 }
 
@@ -44,7 +57,9 @@ main {
     background-color: rgba(255,255,255, 0.9);
     position: relative;
     bottom: 60px;
-    height: 1450px;
+    height: 2200px;
+    max-width: 1380px;
+    width: 1380px;
 
 }
 
@@ -52,9 +67,26 @@ main img {
 
     width: 600px;
     height: 300px;
-    left: 200px;
+    left: 390px;
     position: relative;
 
+}
+
+main p {
+
+    max-width: 1300px;
+
+}
+
+.energypage p {
+
+    font-size: 22px;
+}
+
+.energypage ul li {
+
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main h2 {
@@ -120,11 +152,6 @@ main p {
 
 }
 
-.energypage li {
-
-    font-size: 18px;
-    width: 1000px;
-}
 
 .suspage {
 
@@ -160,6 +187,19 @@ main p span {
 
     font-weight: bold;
     font-size: 25px;
+}
+
+.end {
+
+    max-width: 1380px;
+    position: relative;
+    bottom: 20px;
+}
+.end button {
+
+    
+    position: relative;
+    left: 550px;
 }
 
 .end p {
