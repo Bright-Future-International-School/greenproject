@@ -328,6 +328,7 @@ header button:hover {
 
         position: relative;
         right: 55px;
+        bottom: 15px;
     }
 
     header img {
@@ -346,7 +347,8 @@ header button:hover {
         position: relative;
         width: 350px;
         right: 55px;
-        bottom: 60px;
+        top: 20px;
+
     }
 
     .setimages, .setimages2 {
@@ -366,6 +368,7 @@ header button:hover {
         max-width: 480px;
         width: 480px;
         position: relative;
+        
     }
 
     main h2 {
@@ -381,7 +384,7 @@ header button:hover {
         right: 55px;
         width: 300px;
         text-align: justify;
-        font-size: 22px;
+        font-size: 19px;
     }
 
     main img {
@@ -396,7 +399,8 @@ header button:hover {
         position: relative;
         width: 400px;
         right: 25px;
-        bottom: 85px;
+        bottom: 65px;
+
     }
 
     .homeend .further {
