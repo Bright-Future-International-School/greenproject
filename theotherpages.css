@@ -81,18 +81,14 @@ main p {
 .energypage p {
 
     font-size: 22px;
+    position: relative;
+    bottom: 30px;
 }
 
 .energypage ul li {
 
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.surveypage video {
-
-    position: relative;
-    left: 420px;
 }
 
 main h2 {
@@ -133,7 +129,9 @@ hr {
     background-color: darkgreen;
     border: 1px solid darkgreen;
     width: 550px;
-    margin-top: 45px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 20px;
 
 }
 
@@ -158,10 +156,14 @@ main p {
 
 }
 
+.foodpage {
+
+    height: 1350px;
+}
 
 .suspage {
 
-    height: 1550px;
+    height: 1330px;
 }
 
 .suspage p a {
@@ -175,6 +177,11 @@ main p {
     font-size: 18px;
     width: 996px;
 
+}
+
+.techpage {
+
+    height: 1400px;
 }
 
 
@@ -194,7 +201,7 @@ main p span {
 
     
     position: relative;
-    left: 550px;
+    left: 570px;
 }
 
 .end p {
@@ -280,6 +287,12 @@ header button:hover {
 
     position: relative;
     top: 20px;
+    left: 445px;
+}
+
+.surveypage {
+
+    height: 1100px;
 }
 
 @media screen and (max-height:300px) {
@@ -312,6 +325,14 @@ header button:hover {
         height: 4000px;
     }
 
+    .energypage h2 {
+
+        position: relative;
+        bottom: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
     .energypage img {
 
         position: relative;
@@ -323,6 +344,7 @@ header button:hover {
 
          position: relative;
          left: 85px;
+
     }
 
     .suspage img {
@@ -388,7 +410,20 @@ header button:hover {
 
     .surveypage {
 
-        height: 1400px;
+        height: 1360px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .surveypage h2 {
+
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .surveypage html::-webkit-scrollbar {
+
+        display: hidden;
     }
 
     .surveypage video {
